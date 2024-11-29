@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Rightmove Guide Price Filter",
+  "version": "1.0",
+  "description": "Hides property listings with 'Guide Price' on Rightmove.",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["https://www.rightmove.co.uk/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.rightmove.co.uk/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
